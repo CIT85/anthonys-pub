@@ -9,17 +9,38 @@
     <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 <body>
-   
     <header>
-        <h1> Welcome to the Mixed Martial Arts page!</h1>
+        <h1> MMA</h1>
+        
+        <hr>
+            
+        <nav aria-label="primary-navigation">
+            <ul>
+                <li>
+                    <a href="#Findyourstyle">Finding your style</a>
+                </li>
+                <li>
+                    <a href="#trainingregiement">Training regimens</a>
+                </li>
+                <li>
+                    <a href="#gym">Gym location</a>
+                </li>
+            </ul>
+        </nav>
+     </header>   
+    <hr>
+    <header>
+        <h1> Welcome to my Mixed Martial Arts page!</h1>
     </header>
-   
    <hr>
     
     <main>
         <article id="Findyourstyle">
+        
+            
+            
             <section>
-                <h3>MMA</h3>
+                <h3>The Brand</h3>
             <img src="img/logotipo-equipo-mma-fight_66951-3.png" alt="MMA LOGO"
         title="I am learning about MMA" width="350" 
         height="350">
@@ -31,47 +52,80 @@
         </figure>
         <hr>
     </section>
-            <h2>What type of fighter do you think you are?</h2>
-            <p> Because knwoing what type of fighter you are is <em> CRITICAL</em> to developing a unique style!</p>
+
+            <form action= "https://httpbin.org/get" method="get">
+                <br> 
+    <h2> A little personal inforamtion first</h2>        
+                <fieldset>
+                <legend> Personal Info</legend>
+                <p>
+                <label for="firstname">First Name:</label>
+                <input type="text" name="firstName" id="firstname"
+                placeholder="Doug" autocomplete="on" required 
+                autofocus>
+                </p>
+                <p>
+                <label for="lastname">Last Name:</label>
+                <input type="text" name="last Name" id="lastname"
+                placeholder="Douglass" autocomplete="on" required 
+                >
+                </p>    
+                <p>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password"
+                placeholder="secret" autocomplete="on" required 
+                >
+                
+                </p>    
+                <p>
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone"
+                placeholder="8888888888" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required 
+                >
+                
+                </p>    
+            </fieldset>
+    <br>
+    <h2>What type of fighter do you think you are?</h2>
+            <p> Remember! Learn one art at a time! It is <em> CRUCIAL</em> In developing the fundemental and neccessary skills!</p>
             <p> This will lead to you becoming a great <abbr title="MIXED MARTIAL ARTS">MMA</abbr> 
              Fighter!</p>
             <hr>
-            <form action="https://httpbin.org/get" method="get">
-                <br> 
+            <br> 
                 
                 <fieldset>
-                    <legend>What style suits you best?</legend>
+                    <legend>What base suits you best?</legend>
                     <p>
-                        <input type="radio" name="style" id="striking" value="striking">
+                        <input type="radio" name="base" id="striking" value="striking">
                         <label for="striking">Striker</label>
                     </p>
                     <p>
-                        <input type="radio" name="style" id="wrestling" value="wrestling">
+                        <input type="radio" name="base" id="wrestling" value="wrestling">
                         <label for="wrestling">Wrestler</label>
                     </p>
                     <p>
-                        <input type="radio" name="style" id="submissions" value="submissions">
+                        <input type="radio" name="base" id="submissions" value="submissions">
                         <label for="submissions">Submission artist</label>
                     </p>
                     <p>
-                        <input type="radio" name="style" id="Mixed" value="Mixed">
+                        <input type="radio" name="base" id="Mixed" value="Mixed">
                         <label for="Mixed">Hybrid</label>
                     </p>
                 </fieldset>
                 
                 <br>
                 <fieldset>
-                    <legend>preferred martial arts?</legend>
+                    <legend>What martial arts would you like to learn?</legend>
                     <p>
-                        <input type="checkbox" name="Striker" id="Boxing" value="Boxing">
-                        <label for="Boxing">Boxing</label>
+                        <input type="checkbox" name="Striker" id="Boxer" value="Boxer">
+                        <label for="Boxer">Boxing</label>
                     </p>
                     <p>
                         <input type="checkbox" name="Striker" id="Kickboxing" value="Kickboxing">
                         <label for="Kickboxing">kickboxing</label>
                     </p>
                     <p>
-                        <input type="checkbox" name="Strikier" id="karate" value="Karate">
+                        <input type="checkbox" name="Striker" id="karate" value="Karate">
                         <label for="karate">Karate</label>
                     </p>
                     <p>
@@ -107,38 +161,186 @@
                         <label for="Catchwrestling">Catch wrestling</label>
                     </p>
                 </fieldset>
+                <br> 
+                <fieldset>  
+                    <p>
+                        <label for="Style">Favorite stance based Styles</label>
+                        <Select name="Style" id="Style"> 
+                            <optgroup label="Striking">
+                            <option value="counter">Counter fighter</option>
+                            <option value="pressure">Pressure fighter</option>
+                            <option value="defensive">Defensive fighter</option>
+                            <option value="Volume">Volume fighter</option>
+                            <option value="Balanced">Balanced</option>
+                        </optgroup> 
+                        </Select>
+                    </p> 
+                </fieldset>
+                
                 <br>
-            <fieldset>  
-                <legend>is your martial art not listed? well let me know!</legend>
                 
-                <label for="message">Your Message</label>
+                <fieldset>
+                    <legend>Any other information?</legend>
+                    
+                    <label for="message">Your Message</label>
+                    
+                    <textarea name="message" id="message" cols="70" rows="20" placeholder="Type your message here"></textarea>
+                </fieldset>
                 
-                <br>
-                
-                <textarea name="message" id="message" cols="70" rows="20"
-                
-                placeholder="type your message here"></textarea>
-            </fieldset>
             <br>
-             <button type="submit">Submit</button>
+            <fieldset> 
+           
+
+                <button type="submit">Submit</button>
+
+                <button type="submit" formaction="https://httpbin.org/post" 
+
+                formmethod="post">post</button>
+
+                <button type="reset">Reset</button>    
+
+                
+            </fieldset>      
             
-             <button type="submit" formaction="https://httpbin.org/post" 
-            
-             formmethod="post">post</button>
-            
-             <button type="reset">Reset</button>    
         </form>
-
+    </article>
+        
+        
+        
+        <article id="trainingregiement">
+        <hr>
+        <h3> Their are plenty different types of training regiements that can work for you!</h3>
+        <section>
+        <h2>Website</h2>
+            <ol>
+            <li> A website to help make a decent fighting regiement planner <abbr title="GroundedMMA">
+            <a href="https://groundedmma.com/mma-training-schedule-for-beginners/">GroundedMMA</a>
+            </abbr>.</li>
+        </ol>
+        <aside>
+                
+            <details>
+                <summary>
+                    This a rigiorous <mark>
+                     Training Regiments </mark>
+                    Mma fighters go threw. </summary>
+                    <p>They will get up to workout at mornings as early as <time datetime="05:30">5:30am</time>
+                        And work out  <time
+                        datetime="PT3H">All threw out the day.</time>
+                        every morning.
+                    </p>
+            </details>
+            <br>
+            <table>
+                <caption>Daily Workouts</caption>
+               <thead>
+                <tr>   
+                    <th>&nbsp;</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Workout</th>
+                </tr>
+               </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">Dusk</th>
+                    
+                    <td>
+                        <time datetime="05:30">5:30am</time>-
+                        <time datetime="07:30">7:30am</time>
+                    </td>
+                    <td>Light jog</td>
+                </tr>
+                   
+                  <tr>
+                    <th scope="row">Dawn</th>
+                    <td>
+                        <time datetime="07:00">7am</time>-
+                        <time datetime="08:00">8pm</time>
+                    </td>
+                    <td>Breakfast</td>
+                </tr>
             
-        </article>
-    </main>
-    <hr>
+                  <tr>
+                    <th scope="row">Morning</th>
+                    <td>
+                        <time datetime="08:00">8am</time>-
+                        <time datetime="11:00">11pm</time>
+                    </td>
+                    <td>Intense training</td>
+                </tr>
+                
+                <tr>
+                    <th scope="row">Afternoon-Evening</th>
+                    <td rowspan="2">All other times</td>
+                    <td>Balanced dinenr/relax</td>
+                </tr>
+                <tr>
+                   <th scope="row">Night</th>
+                    <td>Sleep</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">It seems simple! But you have to remember to find a schedule that works for you.
+                    </td>
+                </tr>
+            </tfoot>    
+        </table>
+        
+    </aside>      
+</section>   
+       
+    
 
-    <article id="training regiement"></article>
-    <hr>
+ 
+    <br>
+    
+    
 
-    <p></p>
-        <footer>
+    <dl>
+            <dt> There are many workouts out there to choose from</dt>
+            <dd>Ones for Cardio, upper body and lower body!</dd>
+              
+        
+                
+
+        </dl>
+    
+</article>
+
+<hr>
+
+<article id="gym">
+    <h2>Gym location</h2>
+    <p>Address to a really good mma gym...</p>
+    
+    
+    
+    <figure>
+        <img src="img/348s.jpg" 
+             alt="Description of the image" 
+             title="A picture of the facility" 
+             width="300" 
+             height="300" 
+             loading="lazy">
+        <figcaption>
+            An image of the inside
+        </figcaption>
+    </figure>
+    
+    <address>
+        3076 W Shaw (Shaw and Marks) <br>
+        Fresno’s Premier Mixed Martial Arts Training Academy
+    </address>
+    
+
+
+</article>
+
+<hr>
+
+</main>
+<footer>
          <p>
             &lt;&lt;&lt; &copy;  <a href="about.html">Anthony Silva</a>
             &gt;&gt;&gt;
@@ -150,4 +352,5 @@
         </p>
          </footer>
 </body>
+
 </html>
