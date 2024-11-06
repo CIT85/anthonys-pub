@@ -1,0 +1,163 @@
+ <form action= "https://httpbin.org/get" method="get">
+                <br> 
+    <h2> A little personal inforamtion first</h2>        
+                <fieldset>
+                <legend> Personal Info</legend>
+                <p>
+                <label for="firstname">First Name:</label>
+                <input type="text" name="firstName" id="firstname"
+                placeholder="Doug" autocomplete="on" required 
+                autofocus>
+                </p>
+                <p>
+                <label for="lastname">Last Name:</label>
+                <input type="text" name="last Name" id="lastname"
+                placeholder="Douglass" autocomplete="on" required 
+                >
+                </p>    
+                <p>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password"
+                placeholder="secret" autocomplete="on" required 
+                >
+                
+                </p>    
+                <p>
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone"
+                placeholder="8888888888" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required 
+                >
+                
+                </p>    
+            </fieldset>
+
+              <figure>
+        <img src="img/348s.jpg" 
+             alt="Description of the image" 
+             title="A picture of the facility" 
+             width="300" 
+             height="300" 
+             loading="lazy">
+        <figcaption>
+            An image of the inside
+        </figcaption>
+    </figure>  
+
+     <fieldset> 
+           
+
+                <button type="submit">Submit</button>
+
+                <button type="submit" formaction="https://httpbin.org/post" 
+
+                formmethod="post">post</button>
+
+                <button type="reset">Reset</button>    
+
+                
+            </fieldset>      
+            
+            <fieldset>
+                    <legend>What base suits you best?</legend>
+                    <p>
+                        <input type="radio" name="base" id="striking" value="striking">
+                        <label for="striking">Striker</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="base" id="wrestling" value="wrestling">
+                        <label for="wrestling">Wrestler</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="base" id="submissions" value="submissions">
+                        <label for="submissions">Submission artist</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="base" id="Mixed" value="Mixed">
+                        <label for="Mixed">Hybrid</label>
+                    </p>
+                </fieldset>
+                
+                <br>
+                <fieldset>
+                    <legend>What martial arts would you like to learn?</legend>
+                    <p>
+                        <input type="checkbox" name="Striker" id="Boxer" value="Boxer">
+                        <label for="Boxer">Boxing</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="Striker" id="Kickboxing" value="Kickboxing">
+                        <label for="Kickboxing">kickboxing</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="Striker" id="karate" value="Karate">
+                        <label for="karate">Karate</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="Striker" id="taekwondo" value="taekwondo">
+                        <label for="taekwondo">Taekwondo</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="Striker" id="MuayThai" value="MuayThai">
+                        <label for="MuayThai">Muay Thai</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="Wrestler" id="Freestylewrestling" value="Freestylewrestling">
+                        <label for="Freestylewrestling">Freestyle wrestling</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="Wrestler" id="Collegiatewrestling" value="Collegiatewrestling">
+                        <label for="Collegiatewrestling">Collegiate wrestling</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="Wrestler" id="Grecowrestling" value="Grecowrestling">
+                        <label for="Grecowrestling">Greco wrestling</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="submissonartist" id="Judo" value="Judo">
+                        <label for="Judo">Judo</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="submissionartist" id="JiuJitsu" value="JiuJitsu">
+                        <label for="JiuJitsu">Jiu-Jitsu</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="submissionartist" id="Catchwrestling" value="Catchwrestling">
+                        <label for="Catchwrestling">Catch wrestling</label>
+                    </p>
+                </fieldset>
+                <br> 
+                <fieldset>  
+                    <p>
+                        <label for="Style">Favorite stance based Styles</label>
+                        <Select name="Style" id="Style"> 
+                            <optgroup label="Striking">
+                            <option value="counter">Counter fighter</option>
+                            <option value="pressure">Pressure fighter</option>
+                            <option value="defensive">Defensive fighter</option>
+                            <option value="Volume">Volume fighter</option>
+                            <option value="Balanced">Balanced</option>
+                        </optgroup> 
+                        </Select>
+                    </p> 
+                </fieldset>
+
+                Remember! Learn one art at a time! It is <em> CRUCIAL</em> In developing the fundemental and neccessary skills!</p>
+            <p> This will lead to you becoming a great <abbr title="MIXED MARTIAL ARTS">MMA</abbr>
+            
+            <br>
+            <fieldset>
+            <legend>Any other information?</legend>
+            <label for="message">Your Message</label>
+            <textarea name="message" id="message" cols="70" rows="20" placeholder="Type your message here"></textarea>
+            </fieldset>
+            <br>
+            </form>
+            </article>
+        
+            <h2></h2>
+            <ol>
+            <li>  <abbr title="GroundedMMA">
+            <a href="https://groundedmma.com/mma-training-schedule-for-beginners/">GroundedMMA</a>
+            </abbr>.</li>
+            </ol>
+            <aside>
