@@ -1,0 +1,175 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #948888;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-size: 2rem; 
+  margin: 20px 0;
+}
+
+p {
+  font-size: 1.25rem; 
+  margin: 10px 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: darkgray;
+}
+
+a:visited {
+  color: lightgray;
+}
+
+a:active {
+  color: white;
+}
+
+
+.header {
+  background-color: darkgray;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  padding: 20px;
+  margin: 0;
+}
+
+
+nav {
+  background-color: darkgray;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  font-size: 1.2rem;
+  color: black;
+}
+
+nav ul li a:hover {
+  color: darkgray;
+}
+
+.h2about {
+  text-align: center;
+}
+
+.back {
+  background-color: darkgray;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.about {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: darkgray;
+}
+
+
+.forms {
+  color: black;
+  background-color: darkgrey;
+  max-width: 80%;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 1.25rem;
+}
+
+.forms input, .forms textarea, .forms button {
+  font-size: 1rem;
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%; 
+  box-sizing: border-box;
+}
+
+
+.bw-table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.bw-table th {
+  background-color: black;
+  color: lightgray;
+  padding: 10px;
+  text-align: left;
+  border: 3px solid white;
+}
+
+.bw-table tr:hover {
+  background-color: lightgray;
+}
+
+footer {
+  background-color: darkgray;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  padding: 20px;
+  margin: 0;
+}
+
+footer p {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+figure {
+  margin: 20px auto;
+  width: 80%;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.color-palette {
+  text-align: center;
+  margin: 20px;
+}
+
+.palette {
+  list-style-type: none;
+  display:flex; 
+  justify-content: center; 
+  
+  padding: 0; 
+}
+
+.color-swatch {
+  width: 100px; 
+  height: 100px; 
+  border-radius: 8px; 
+}
+

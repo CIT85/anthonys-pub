@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Anthony Silva">
+    <meta name="description" content="Hi, I'm Anthony Silva. This page is about me.">
+    <title>My First Web Page</title>
+    <link rel="icon" href="html5.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>Hi, I'm Anthony Silva</h1>
+    </header>
+    <br>
+    <hr>
+    <br>
+    <main>
+        <section>
+            <h2>Why am i taking this class?</h2>
+            <p>I am taking this course to learn about Website development, and everything that makes it work.</p>
+            <br>
+        </section>
+        <section>  
+            <hr>
+            <h2> What is httpbin?</h2>            
+            <p>httpbin a request service used for debugging and testing request.</p>
+            <br>
+        </section>  
+        <br>
+        <hr>
+        <br>
+        <section class="h2about">
+            <h2>Favorite fighters table 1</h2>
+            <table class="bw-table">
+                <caption>First Table</caption>
+                <thead>
+                    <tr>
+                        <th>fighters</th>
+                        <th>win/loss record</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                    </tr>
+                    <tr>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                    <tr>
+                        <td>Data 5</td>
+                        <td>Data 6</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <hr>
+            <br>
+            <h2>Favorite fighters table 2</h2>
+                <table class="bw-table">
+                <caption>Second Table</caption>
+                <thead>
+                    <tr>
+                        <th>fighters</th>
+                        <th>win/loss record</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                    </tr>
+                    <tr>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                    <tr>
+                        <td>Data 5</td>
+                        <td>Data 6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <br>
+        <hr>
+        <br>
+        <section class="para">
+            <h2>Contact Form</h2>
+            <p>If you have any concerns, let me know below.</p>
+
+            <form action= "https://httpbin.org/get" method="get">
+                <fieldset class="forms">
+                    <legend class="legends">Personal Info</legend>
+
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="firstName" id="firstname" size="70" placeholder="Doug" autocomplete="on" required autofocus>
+
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="lastName" id="lastname" size="70" placeholder="Douglass" autocomplete="on" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" size="70" placeholder="Your email" required>
+
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone" size="70" placeholder="888-888-8888" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+
+                    <label for="message">Your Message</label>
+                    <textarea name="message" id="message" cols="70" rows="20" placeholder="Type your message here"></textarea>
+
+                    <button type="submit" formaction="https://httpbin.org/post">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="#">Back to top</a></p>
+        <p><a href="Sitemap.html">sitemap</a></p>
+        <p><a href="Index.html">back to home</a></p>
+    </footer>
+
+</body>
+
+</html>
