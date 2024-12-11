@@ -1,0 +1,1266 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap"); /* Imports the Nunito font family */
+
+/* Resets margin and padding for all elements, sets box-sizing to border-box for all elements */
+* {
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+/* General body styling */
+body {
+  font-family: Arial, sans-serif; /* Sets the font family to Arial or sans-serif as a fallback */
+  line-height: 1.8; /* Increases line height for readability */
+  background-color: white; /* Sets background color to white */
+}
+
+/* Main content container styling */
+main {
+  padding: 5% 10%; /* Adds padding around the main content */
+}
+
+/* Header styling */
+header {
+  background-color: #25ced1; /* Sets a turquoise background color */
+  color: #191919; /* Sets dark color for text */
+}
+
+/* Horizontal line in header */
+header hr {
+  border: 0; /* Removes the default border */
+  border-top: 5px solid black; /* Adds a solid black top border */
+  width: 100%; /* Makes the horizontal line span the full width */
+  border-style:dotted; /* Sets a dotted style for the border */
+}
+
+/* Main title styling */
+h1 {
+  font-size: 50px; /* Sets font size to 50px */
+  margin: 0 0 10px 0; /* Removes the margin from the top and adds 10px bottom margin */
+  font-weight: bolder; /* Makes the font weight bolder */
+  text-align: center; /* Centers the text horizontally */
+}
+
+/* Secondary heading styling */
+h2 {
+  text-align: center; /* Centers the text horizontally */
+  font-size: 30px; /* Sets font size to 30px */
+  padding: 5px 0; /* Adds vertical padding */
+  color: #191919; /* Sets the text color to dark */
+}
+
+/* General horizontal line styling */
+hr {
+  border: 0; /* Removes the default border */
+  border-top: 5px solid white; /* Sets a white top border */
+  width: 100%; /* Makes the line span the full width */
+}
+
+/* Navigation bar styling */
+nav {
+  background-color: #25ced1; /* Sets a turquoise background color */
+  color: white; /* Sets text color to white */
+  padding: 14px; /* Adds padding around the navigation bar */
+}
+
+/* Unordered list styling inside the navigation */
+nav ul {
+  display: flex; /* Displays the list items in a flex row */
+  list-style-type: none; /* Removes the default list style */
+  text-align: center; /* Centers the list items */
+  justify-content:center; /* Centers the list items horizontally */
+}
+
+/* List items inside the navigation */
+nav ul li {
+  display: inline-block; /* Makes list items inline-block elements */
+  margin-left: 20px; /* Adds left margin between the items */
+  gap: 20px; /* Adds gap between each list item */
+}
+
+/* Styling for the links inside navigation items */
+nav ul li a {
+  text-decoration: none; /* Removes the underline from links */
+  color: #191919; /* Sets text color to dark */
+  padding: 4px; /* Adds padding around the text */
+  font-weight: bold; /* Makes the text bold */
+  font-size: 14px; /* Sets font size to 17px */
+}
+
+/* Hover effect for links in navigation */
+nav ul li a:hover {
+  border: 2px solid; /* Adds a border on hover */
+  border-radius: 30px; /* Rounds the corners of the border */
+  background-color: white; /* Sets background color to white */
+  padding: 4px; /* Adds padding */
+}
+
+/* Active link state in navigation */
+nav ul li a:active {
+  background-color: aqua; /* Changes the background color to aqua when active */
+}
+
+/* Visited link state in navigation */
+nav ul li a:visited {
+  background-color: darkturquoise; /* Sets the background to dark turquoise when visited */
+}
+
+/* Figure element styling */
+figure {
+  text-align: center; /* Centers the figure content */
+  margin: 2px; /* Adds a small margin */
+}
+
+/* Image aligned to the left inside a figure */
+.image-left {
+  float:left; /* Floats the image to the left */
+  margin-right: 15px; /* Adds right margin to separate from text */
+}
+
+/* Image aligned to the right inside a figure */
+.image-right {
+  float: right; /* Floats the image to the right */
+  margin-left: 15px; /* Adds left margin to separate from text */
+}
+
+/* Ensures images inside a container are responsive */
+.container img {
+  max-width: 100%; /* Ensures images don't exceed the width of their container */
+  height: auto; /* Maintains the aspect ratio of the image */
+}
+
+/* Container for content with some padding */
+.container {
+  width: 90%; /* Sets container width to 90% */
+  width: 100%; /* Overrides the previous width for full width */
+  overflow: hidden; /* Ensures that any overflowing content is hidden */
+  padding-left: 100px; /* Adds left padding */
+  padding: 0 20px 0 20px; /* Adds padding to the left and right */
+}
+
+/* Paragraph styling inside the container */
+.container p {
+  text-align: justify; /* Justifies the text */
+  max-width: 100%; /* Ensures the paragraph doesn't exceed the width of the container */
+}
+
+/* Hover effect for images inside the container */
+.container img:hover {
+  background-color: white; /* Sets background to white */
+  box-shadow: 2px 2px 10px white; /* Removes the shadow effect on hover */
+  border-radius: 30px; /* Rounds the corners of the image */
+}
+
+/* Padding inside images in the container */
+.container img {
+  padding: 5px; /* Adds padding around the image */
+}
+
+/* Styling for unordered lists inside the container */
+.container ul {
+  border: 4px solid black; /* Adds a black border around the list */
+}
+
+/* Hover effect for images outside the container */
+img:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow effect on hover */
+}
+
+/* Styling for inputs and buttons container */
+.inputs {
+  border: 4px solid #191919; /* Adds a border around the inputs container */
+  border-radius: 30px; /* Rounds the corners of the container */
+  background-color: #25ced1; /* Sets the background color to turquoise */
+  display: block; /* Makes the container a block element */
+  padding: 15px; /* Adds padding inside the container */
+  max-width: 100%; /* Ensures it doesn't exceed the width of its parent */
+  margin: 30px; /* Adds margin around the container */
+  font-size: 1.2rem; /* Sets the font size */
+}
+
+/* Button, input, and textarea styling inside the .inputs class */
+.inputs button, input, textarea {
+  font-size: 1rem; /* Sets font size */
+  padding: 10px; /* Adds padding */
+  margin: 10px; /* Adds margin */
+  width: 100%; /* Ensures they take up the full width of their container */
+  border: 2px solid; /* Adds a border */
+  border-radius: 30px; /* Rounds the corners */
+}
+
+/* Allows textareas to be resized vertically */
+.inputs textarea {
+  resize: vertical; /* Enables vertical resizing */
+}
+
+/* Hover effect for the inputs container */
+.inputs:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
+}
+
+/* Hover effect for button, input, and textarea inside .inputs */
+.inputs button:hover, input:hover, textarea:hover {
+  background-color: white; /* Sets background to white */
+  box-shadow: 2px 2px 10px white; /* Removes shadow */
+  border-radius: 30px; /* Rounds the corners */
+}
+
+/* Light background color for buttons inside .inputs */
+.inputs button {
+  background-color: #fceade; /* Sets a light background color */
+}
+
+/* Styling for the color palette container */
+.palette {
+  border: 4px solid; /* Adds a border around the palette */
+  padding: 17px; /* Adds padding */
+  list-style-type: circle; /* Uses circular bullet points for the list */
+}
+
+/* Styling for individual color items inside the palette */
+.colors {
+  border: 2px solid #191919; /* Adds a border around each color item */
+  padding: 5px; /* Adds padding */
+  margin: 7px; /* Adds margin between items */
+  width: 100%; /* Ensures the color item takes up full width */
+}
+
+/* Hover effect for color items in the palette */
+.colors:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+}
+
+/* Styling for figcaption */
+figcaption {
+  text-align: center; /* Centers the text inside the figcaption */
+  font-size: 1rem; /* Sets the font size */
+  color: #191919; /* Sets the text color */
+  border: 2px solid; /* Adds a border */
+  background-color: #25ced1; /* Sets a turquoise background */
+  border-radius: 30px; /* Rounds the corners */
+  width: 250px; /* Sets a fixed width */
+  padding: 2px; /* Adds padding */
+  margin: 2px auto; /* Adds margin and centers the element */
+  display: block; /* Makes the figcaption a block-level element */
+}
+
+/* Hover effect for figcaption */
+figcaption:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+}
+
+/* Section 1 styling with border */
+#section1 {
+  border: 4px solid #191919; /* Adds a border around section1 */
+  border-radius: 30px; /* Rounds the corners */
+}
+
+article ul li a  {
+  text-decoration: none;
+  color: #191919;
+}
+
+article ul li a:hover  {
+ border: 2px solid #191919;
+ border-radius: 30px;
+ background-color: white;
+ padding: 5px;
+}
+
+/* Styling for sections and articles */
+section, article {
+  display: flex; /* Displays the section and article as flex containers */
+  flex-direction: column; /* Stacks the child elements vertically */
+  justify-content: flex-start; /* Aligns children at the top */
+  padding: 20px; /* Adds padding inside the section/article */
+  margin: 15px 0; /* Adds margin between sections/articles */
+  border-radius: 30px; /* Rounds the corners */
+  background-color: white; /* Sets the background color to white */
+  border: 4px solid #191919; /* Adds a border */
+  max-width: 1000px; /* Limits the maximum width */
+  margin-left: auto; /* Centers the section/article horizontally */
+  margin-right: auto; /* Centers the section/article horizontally */
+}
+
+/* Styling for headings inside sections and articles */
+section h2, article h2 {
+  font-size: 2.0rem; /* Sets font size */
+  padding-bottom: 11px; /* Adds padding to the bottom */
+  text-align: center; /* Centers the heading */
+}
+
+/* Styling for subheadings inside sections and articles */
+section h3, article h3 {
+  font-size: 1.5rem; /* Sets font size */
+  padding: 13px 0; /* Adds vertical padding */
+  text-align: left; /* Aligns the text to the left */
+}
+
+/* Hover effect for paragraphs */
+p:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+}
+
+/* Paragraph styling inside sections and articles */
+section p, article p {
+  line-height: 2.3; /* Sets the line height */
+  text-align: left; /* Aligns the text to the left */
+  border: 4px solid; /* Adds a border around the paragraph */
+  border-radius: 30px; /* Rounds the corners */
+  background-color: #25ced1; /* Sets a turquoise background */
+  padding: 20px; /* Adds padding */
+  height: 100%; /* Ensures the paragraph takes up the full height */
+  margin: 5px; /* Adds margin */
+  word-spacing: 3.0px; /* Adds space between words */
+}
+
+/* Highlighted text styling with a mark element */
+mark {
+  background-color: white; /* Sets background to white */
+  border-radius: 30px; /* Rounds the corners */
+  padding: 5px; /* Adds padding */
+  color: #191919; /* Sets the text color */
+  font-weight: bold; /* Makes the text bold */
+}
+
+/* Styling for details element */
+details {
+  text-align: center; /* Centers the details element */
+  margin: 50px; /* Adds margin around the element */
+  padding: 10px; /* Adds padding inside the element */
+  background-color: white; /* Sets the background color */
+  border-radius: 8px; /* Rounds the corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds shadow */
+}
+
+/* Styling for summary element inside details */
+summary {
+  font-size: 18px; /* Sets font size */
+  font-weight: bold; /* Makes the text bold */
+  cursor: pointer; /* Changes the cursor to pointer */
+}
+
+/* Unordered list styling inside a section */
+ul {
+  border: 4px solid white; /* Adds a white border around the list */
+  border-radius: 30px; /* Rounds the corners */
+  background-color: #fceade; /* Sets a light background color */
+  padding: 10px; /* Adds padding inside the list */
+  margin-bottom: 20px; /* Adds margin to the bottom */
+}
+
+/* Hover effect for unordered lists */
+ul:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
+}
+
+/* Styling for list items inside unordered lists */
+ul li {
+  line-height: 2.0; /* Sets line height */
+  text-align: justify; /* Justifies the text */
+  padding-left: 20px; /* Adds left padding */
+  list-style-position: inside; /* Ensures the bullet points are inside */
+}
+
+/* Hover effect for links inside list items */
+ul li a:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
+}
+
+/* Styling for links inside paragraphs */
+p a {
+  text-decoration: none; /* Removes underline from links */
+  color:#191919; /* Sets text color */
+  border:1px solid #191919; /* Adds border around the link */
+  background-color: white; /* Sets background color to white */
+  margin-left: 2px; /* Adds margin */
+  padding: 4px; /* Adds padding */
+  border-radius: 20px; /* Rounds the corners */
+}
+
+/* Hover effect for links inside paragraphs */
+p a:hover {
+  background-color:#fceade; /* Sets background color to light */
+}
+
+/* Active state for links inside paragraphs */
+p a:active {
+  background-color: lightblue; /* Changes background to light blue */
+}
+
+/* Caption styling for tables */
+caption {
+  border: 4px solid black; /* Adds a black border around the caption */
+  border-radius: 30px; /* Rounds the corners */
+  background-color: #25ced1; /* Sets a turquoise background color */
+  width: 200px; /* Sets width */
+  margin: 2px auto; /* Centers the caption horizontally */
+}
+
+/* Hover effect for table captions */
+caption:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
+}
+
+/* Styling for table elements */
+table {
+  width: 100%; /* Makes the table span the full width */
+  margin: 20px 0; /* Adds vertical margin */
+  border-collapse: collapse; /* Removes space between table borders */
+  table-layout: fixed; /* Fixes the table layout */
+}
+
+/* Hover effect for tables */
+table:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
+}
+
+/* Caption inside the table */
+table caption {
+  font-size: 1.5rem; /* Sets font size */
+  margin-bottom: 10px; /* Adds bottom margin */
+}
+
+/* Styling for table headers and cells */
+th, td {
+  border: 3px solid #191919; /* Adds a solid border */
+  padding: 10px; /* Adds padding */
+  text-align: left; /* Aligns text to the left */
+}
+
+/* Header cells styling */
+th {
+  background-color: #25ced1; /* Sets a turquoise background color */
+  color: #191919; /* Sets text color to dark */
+}
+
+/* Table data cells styling */
+td {
+  background-color: white; /* Sets background color to white */
+}
+
+/* Even rows in table styling */
+table tr:nth-child(even) td {
+  background-color: white; /* Sets background color for even rows */
+}
+
+/* Styling for the list of sources */
+#links-to-sources1 ul {
+  border: 4px solid black; /* Adds a black border */
+  display: grid; /* Uses grid display */
+  grid-template-columns: 1fr 1fr; /* Creates two equal-width columns */
+  gap: 15px; /* Adds gap between items */
+}
+
+/* List items inside #links-to-sources1 */
+#links-to-sources1 ul li {
+  display: inline-block; /* Makes list items inline-block elements */
+  padding-left: 40px; /* Adds left padding */
+  text-align: center; /* Centers the text */
+}
+
+/* Styling for links inside #links-to-sources1 */
+#links-to-sources1 ul li a {
+  text-decoration: none; /* Removes underline from links */
+  color: #191919; /* Sets text color to dark */
+  font-weight: bold; /* Makes the font bold */
+  font-size: 1.1rem; /* Sets font size */
+  padding: 5px; /* Adds padding */
+}
+
+/* Hover effect for links inside #links-to-sources1 */
+#links-to-sources1 ul li a:hover {
+  border: 2px solid; /* Adds a border */
+  border-radius: 30px; /* Rounds the corners */
+  background-color: white; /* Sets background color to white */
+  padding: 4px; /* Adds padding */
+}
+
+/* Styling for second list of links */
+.links2 ul {
+  border: 4px solid black; /* Adds a black border */
+  display: block; /* Uses block display */
+  text-align: left; /* Aligns text to the left */
+  list-style-type: circle; /* Sets bullet type to circle */
+  list-style-position: inside; /* Ensures bullets are inside */
+  display: flex; /* Uses flex display */
+  justify-content: left; /* Aligns the items to the left */
+  flex-direction: column; /* Stacks the list items vertically */
+}
+
+/* List items inside .links2 */
+.links2 ul li {
+  padding-left: 40px; /* Adds left padding */
+  text-align: left; /* Aligns text to the left */
+}
+
+/* Styling for links inside .links2 */
+.links2 ul li a {
+  text-decoration: none; /* Removes underline from links */
+  color: #191919; /* Sets text color to dark */
+  font-weight: bold; /* Makes the font bold */
+  font-size: 1.1rem; /* Sets font size */
+  padding: 5px; /* Adds padding */
+}
+
+/* Hover effect for links inside .links2 */
+.links2 ul li a:hover {
+  border: 2px solid; /* Adds a border */
+  border-radius: 30px; /* Rounds the corners */
+  background-color: white; /* Sets background color to white */
+  padding: 4px; /* Adds padding */
+}
+
+/* Footer styling */
+footer {
+  background-color: #25ced1; /* Sets a turquoise background */
+  color: white; /* Sets text color to white */
+  padding: 10px; /* Adds padding inside the footer */
+  text-align: center; /* Centers the text */
+  margin-top: auto; /* Pushes footer to the bottom */
+  position: sticky; /* Keeps footer fixed at the bottom */
+  bottom: 0; /* Fixes the position at the bottom */
+  width: 100%; /* Ensures full width */
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1); /* Adds shadow effect */
+}
+
+/* Styling for unordered list inside the footer */
+footer ul {
+  list-style-type: none; /* Removes default list styling */
+  text-align: center; /* Centers the text */
+  display: flex; /* Uses flex display */
+  list-style-type: none; /* Removes default list styling */
+  justify-content: center; /* Centers the list items */
+}
+
+/* List items inside footer */
+footer ul li {
+  display: inline-block; /* Makes list items inline-block */
+}
+
+/* Styling for links inside the footer */
+footer a {
+  text-decoration: none; /* Removes underline */
+  color: #191919; /* Sets text color */
+  padding: 4px; /* Adds padding */
+  font-weight: bold; /* Makes the text bold */
+  font-size: 17px; /* Sets font size */
+  text-wrap: nowrap; /* Prevents wrapping of text */
+  max-width: 100%; /* Ensures the link takes full width */
+}
+
+/* Hover effect for links inside footer */
+footer a:hover {
+  border: 2px solid; /* Adds border */
+  border-radius: 30px; /* Rounds the corners */
+  background-color: white; /* Sets background color to white */
+  padding: 4px; /* Adds padding */
+}
+
+/* Active state for links inside footer */
+footer a:active {
+  background-color: aqua; /* Changes background color */
+}
+
+/* Visited state for links inside footer */
+footer a:visited {
+  background-color: darkturquoise; /* Changes background color */
+}
+
+
+@media (max-width: 480px) {
+  /* General body settings */
+  body {
+    font-size: 12px; /* Adjust font size for smaller screens */
+    width: 100%; /* Ensure body takes full width of the viewport */
+    height: auto; /* Auto height to allow for content to fit */
+
+    margin: 0; /* Remove any default margin */
+    display: block; /* Ensure body has block display */
+    box-sizing: border-box; /* Account for padding and borders in width/height */
+  }
+
+  main {
+    padding: 6px;
+  }
+
+  /* Header styling */
+  header {
+    font-size: 30px; /* Adjust main heading font size */
+    width: 100%;
+  }
+
+  header ul {
+    text-align: center; /* Center the header */
+  }
+
+  /* Image settings */
+  img {
+    height: 70%;
+    width: 70%;
+  }
+
+  /* Section and article settings */
+  section, article {
+    padding: 2px;
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+  /* Navigation settings */
+  nav ul {
+    display: flex;
+    flex-direction: column; /* Stack navigation items vertically */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%; /* Ensure navigation spans the full width */
+    align-items: center; /* Center navigation items horizontally */
+  }
+
+   nav ul li a {
+    font-size: 15px;
+   }
+
+  /* Container settings */
+  .container {
+    padding: 10px; /* Reduce padding for smaller screens */
+    width: 100%; /* Ensure the container spans full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+  /* Inputs container */
+  .inputs {
+    padding: 10px; /* Adjust padding inside the inputs container */
+    width: 100%; /* Ensure the inputs take up full width */
+    box-sizing: border-box;
+  }
+
+  /* Footer settings */
+  footer {
+    padding: 10px; /* Adjust padding in the footer */
+    width: 100%; /* Make footer take up full width */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center footer items */
+    position: relative; /* Allow normal document flow */
+    box-sizing: border-box;
+  }
+
+  /* Footer list styling */
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%; /* Ensure footer list spans full width */
+    align-items: center; /* Center the list items */
+  }
+  #links-to-sources1 {
+    width: 90%;
+    list-style-type: circle;
+  }
+
+  #links-to-sources1 ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  
+    width: 100%; /* Ensure footer list spans full width */
+    align-items: center; /* Center the list items */
+  }
+  
+  .inputs {
+      border: 4px solid #191919; /* Adds a border around the inputs container */
+      border-radius: 30px; /* Rounds the corners of the container */
+      background-color: #25ced1; /* Sets the background color to turquoise */
+      display: flex; /* Makes the container a block element */
+      flex-direction: column;
+      padding: 15px;
+      font-size: 14px;
+      height: auto;
+      width: auto; /* Ensures it doesn't exceed the width of its parent */
+      margin: 30px;
+      
+    }
+
+    /* Button, input, and textarea styling inside the .inputs class */
+    .inputs button, input, textarea {
+      font-size: 1rem; /* Sets font size */
+      padding: 5px; /* Adds padding */
+      margin: 5px; /* Adds margin */
+      width: 100%; /* Ensures they take up the full width of their container */
+      border: 2px solid; /* Adds a border */
+      border-radius: 30px; /* Rounds the corners */
+    }
+
+    #section1 ul {
+      display: inline-block;
+    }
+  
+    #section1 ul li a {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      width: 100%; /* Ensure navigation spans the full width */
+      box-sizing: border-box;
+    }
+
+    .pet-volunteer-opportunities {
+      font-size: 15px;
+      border: 4px solid #191919;
+    }
+    
+    .pet-volunteer-opportunities ul  {
+      list-style-type: none;
+      border: 4px solid #191919;
+      margin:5px;
+    }
+  
+    .pet-volunteer-opportunities ul li a {
+      text-decoration: none;
+      color:white;
+    }
+    
+    .pet-volunteer-opportunities ul li a:hover {
+      box-shadow: none;
+      color: #25ced1;
+    }
+  }
+
+@media (min-width: 481px) and (max-width: 768px) {
+   body {
+    font-size: 20px; /* Adjust font size for smaller screens */
+    width: 100%; /* Ensure body takes full width of the viewport */
+    height: auto; /* Auto height to allow for content to fit */
+
+    margin: 0; /* Remove any default margin */
+    display: block; /* Ensure body has block display */
+    box-sizing: border-box; /* Account for padding and borders in width/height */
+  }
+
+  main {
+    padding: 6px;
+  }
+
+  /* Header styling */
+  header {
+    font-size: 30px; /* Adjust main heading font size */
+    width: 100%;
+  }
+
+  header ul {
+    text-align: center; /* Center the header */
+  }
+
+  /* Image settings */
+  img {
+    max-width: 100%; /* Ensure image is responsive and fits within the container */
+    height: auto;
+  }
+
+  /* Section and article settings */
+  section, article {
+    padding: 2px;
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+  /* Navigation settings */
+  nav ul {
+    display: flex;
+    flex-direction: column; /* Stack navigation items vertically */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%; /* Ensure navigation spans the full width */
+    align-items: center; /* Center navigation items horizontally */
+  }
+
+  /* Container settings */
+  .container {
+    padding: 10px; /* Reduce padding for smaller screens */
+    width: 100%; /* Ensure the container spans full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+  /* Inputs container */
+  .inputs {
+    padding: 10px; /* Adjust padding inside the inputs container */
+    width: 100%; /* Ensure the inputs take up full width */
+    box-sizing: border-box;
+  }
+
+  /* Footer settings */
+  footer {
+    padding: 10px; /* Adjust padding in the footer */
+    width: 100%; /* Make footer take up full width */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center footer items */
+    position: relative; /* Allow normal document flow */
+    box-sizing: border-box;
+  }
+
+  /* Footer list styling */
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%; /* Ensure footer list spans full width */
+    align-items: center; /* Center the list items */
+  }
+  #links-to-sources1 {
+    width: 90%;
+    list-style-type: circle;
+  }
+
+  #links-to-sources1 ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Ensure footer list spans full width */
+    align-items: center; /* Center the list items *//* General body settings */
+  
+  
+  }
+
+  .inputs {
+    border: 4px solid #191919; /* Adds a border around the inputs container */
+    border-radius: 30px; /* Rounds the corners of the container */
+    background-color: #25ced1; /* Sets the background color to turquoise */
+    display: flex; /* Makes the container a block element */
+    flex-direction: column;
+    padding: 15px;
+    font-size: 16px;
+    height: auto;
+    width: auto; /* Ensures it doesn't exceed the width of its parent */
+    margin: 30px;
+    
+  }
+
+  /* Button, input, and textarea styling inside the .inputs class */
+  .inputs button, input, textarea {
+    font-size: 1rem; /* Sets font size */
+    padding: 5px; /* Adds padding */
+    margin: 5px; /* Adds margin */
+    width: 100%; /* Ensures they take up the full width of their container */
+    border: 2px solid; /* Adds a border */
+    border-radius: 30px; /* Rounds the corners */
+  }
+
+  #section1 ul {
+    display: inline-block;
+  }
+
+  #section1 ul li a {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%; /* Ensure navigation spans the full width */
+    box-sizing: border-box;
+  }
+
+
+  .pet-volunteer-opportunities {
+    font-size: 15px;
+    border: 4px solid #191919;
+  }
+  
+  .pet-volunteer-opportunities ul  {
+    list-style-type: none;
+    border: 4px solid #191919;
+    margin:5px;
+  }
+
+  .pet-volunteer-opportunities ul li a {
+    text-decoration: none;
+    color:white;
+  }
+  .pet-volunteer-opportunities ul li a:hover {
+    box-shadow: none;
+    color: #25ced1;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+   
+    width: 100%; /* Ensure body takes full width of the viewport */
+    height: auto; /* Auto height to allow for content to fit */
+    margin: 0; /* Remove any default margin */
+    display: block; /* Ensure body has block display */
+    box-sizing: border-box; /* Account for padding and borders in width/height */
+  }
+
+  section p {
+    font-size: 19px;
+  }
+  
+  article p {
+    font-size: 19px;
+  }
+
+  main {
+    padding: 6px;
+    font-size: 11px; /* Adjust font size for smaller screens */
+  }
+
+  /* Header styling */
+  header {
+    font-size: 30px; /* Adjust main heading font size */
+    width: 100%;
+  }
+
+  header ul {
+    text-align: center; /* Center the header */
+  }
+
+
+   ul li {
+    font-size: 19px;
+  }
+ 
+  /* Image settings */
+  img {
+    max-width: 100%; /* Ensure image is responsive and fits within the container */
+    height: auto;
+  }
+
+  /* Section and article settings */
+  section, article {
+    padding: 2px;
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+  /* Navigation settings */
+  nav ul {
+    display: flex;
+    flex-direction: column; /* Stack navigation items vertically */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%; /* Ensure navigation spans the full width */
+    align-items: center; /* Center navigation items horizontally */
+  }
+
+
+  nav ul li a {
+    font-size: 30px;
+  }
+  
+  table td, th {
+    font-size: 24px;
+  }
+
+
+  /* Container settings */
+  .container {
+    padding: 10px; /* Reduce padding for smaller screens */
+    width: 100%; /* Ensure the container spans full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+  /* Inputs container */
+  .inputs {
+    padding: 10px; /* Adjust padding inside the inputs container */
+    width: 100%; /* Ensure the inputs take up full width */
+    box-sizing: border-box;
+  }
+
+  /* Footer settings */
+  footer {
+    padding: 10px; /* Adjust padding in the footer */
+    width: 100%; /* Make footer take up full width */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center footer items */
+    position: relative; /* Allow normal document flow */
+    box-sizing: border-box;
+  }
+
+  /* Footer list styling */
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%; /* Ensure footer list spans full width */
+    align-items: center; /* Center the list items */
+  }
+  
+  footer ul li a {
+    font-size: 27px;
+  }
+  
+  #links-to-sources1 {
+    width: 90%;
+    list-style-type: circle;
+  }
+
+  #links-to-sources1 ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Ensure footer list spans full width */
+    align-items: center; /* Center the list items *//* General body settings */
+  }
+
+  #links-to-sources1 ul li a {
+    font-size: 27px;
+  }
+    .inputs {
+      border: 4px solid #191919; /* Adds a border around the inputs container */
+      border-radius: 30px; /* Rounds the corners of the container */
+      background-color: #25ced1; /* Sets the background color to turquoise */
+      display: flex; /* Makes the container a block element */
+      flex-direction: column;
+      padding: 15px;
+      font-size: 14px;
+      height: auto;
+      width: auto; /* Ensures it doesn't exceed the width of its parent */
+      margin: 30px;
+      
+    }
+  
+    /* Button, input, and textarea styling inside the .inputs class */
+    .inputs button, input, textarea {
+      font-size: 27px; /* Sets font size */
+      padding: 5px; /* Adds padding */
+      margin: 5px; /* Adds margin */
+      width: 100%; /* Ensures they take up the full width of their container */
+      border: 2px solid; /* Adds a border */
+      border-radius: 30px; /* Rounds the corners */
+    }
+
+    #section1 ul {
+      display: inline-block;
+    }
+  
+    #section1 ul li a {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      width: 100%; /* Ensure navigation spans the full width */
+      box-sizing: border-box;
+    }
+
+    .pet-volunteer-opportunities {
+      font-size: 15px;
+      border: 4px solid #191919;
+    }
+    
+    .pet-volunteer-opportunities ul  {
+      list-style-type: none;
+      border: 4px solid #191919;
+      margin:5px;
+    }
+  
+    .pet-volunteer-opportunities ul li a {
+      text-decoration: none;
+      color:white;
+    }
+    .pet-volunteer-opportunities ul li a:hover {
+      
+      box-shadow: none;
+      color: #25ced1;
+    }
+  }
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  main {
+    width: 100%;
+    font-size: 1.5rem;
+    height: auto;  
+  }
+
+  ul li a {
+    font-size: 27px;
+  }
+
+  nav ul li a {
+    font-size: 12px;
+  }
+
+  footer ul li a {
+  font-size: 13px;
+  }
+  
+  table td, th {
+    font-size: 28px;
+  }
+
+  #links-to-sources1 ul li a {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  article p {
+    font-size: 24px;
+  }
+
+  section p {
+    font-size: 24px;
+  }
+  
+  .inputs {
+    font-size: 23px;
+  }
+
+  section h2 {
+    font-size: 55px
+  }
+
+  section, article h3 {
+    font-size: 45px;
+  }
+
+  article ul li {
+    font-size: 23px;
+  }
+
+  ul li a {
+    font-size: 20px;
+  }
+
+  #section1 ul {
+    display: inline-block;
+  }
+
+  #section1 ul li a {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%; /* Ensure navigation spans the full width */
+    box-sizing: border-box;
+  }
+    .pet-volunteer-opportunities {
+      font-size: 15px;
+      border: 4px solid #191919;
+    }
+    
+    .pet-volunteer-opportunities ul  {
+      list-style-type: none;
+      border: 4px solid #191919;
+      margin:5px;
+    }
+  
+    .pet-volunteer-opportunities ul li a {
+      text-decoration: none;
+      color:white;
+    }
+    .pet-volunteer-opportunities ul li a:hover {
+      box-shadow: none;
+      color: #25ced1;
+  }
+}
+
+@media (min-width: 1201px) {
+  main {
+    width: 100%;
+    font-size: 3.5rem;
+    height: auto;
+  }
+  
+  img {
+    height: 40%;
+    width: 40%;
+  }
+
+  ul li a {
+    font-size: 20px;
+  }
+
+  nav ul li a {
+    font-size: 12px;
+  }
+
+  footer ul li a {
+  font-size: 14px;
+  }
+  
+  table td, th {
+    font-size: 24px;
+  }
+
+  #links-to-sources1 ul li a {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+   article p {
+    font-size: 15px;
+  }
+
+  section p {
+    font-size: 15px;
+  }
+
+  section h2 {
+    font-size: 30px
+  }
+
+  section, article h3 {
+    font-size: 25px;
+  }
+
+  article ul li {
+    font-size: 20px;
+  }
+ 
+  .inputs {
+    font-size: 20px;
+  }
+  
+  #section1 ul {
+    display: inline-block;
+   
+  }
+
+  #section1 ul li a { 
+    padding: 0;
+    margin: 0;
+   
+    width: 100%; /* Ensure navigation spans the full width */
+    box-sizing: border-box;
+  }
+  
+  .pet-volunteer-opportunities {
+    font-size: 15px;
+    border: 4px solid #191919;
+  }
+  
+  .pet-volunteer-opportunities ul  {
+    list-style-type: none;
+    border: 4px solid #191919;
+    margin:5px;
+  }
+
+  .pet-volunteer-opportunities ul li a {
+    text-decoration: none;
+    color:white;
+  }
+  .pet-volunteer-opportunities ul li a:hover {
+  
+    box-shadow: none;
+    color: #25ced1;
+  }  
+
+}  
+
+
+
